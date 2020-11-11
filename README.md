@@ -2,8 +2,6 @@
 
 Example [SailsJS](https://sailsjs.com/) project demonstrating that calling [`datastore.transaction(fn)`](https://sailsjs.com/documentation/reference/waterline-orm/datastores/transaction) when using the [`sails-postgresql`](https://www.npmjs.com/package/sails-postgresql) adapter for [Waterline](https://waterlinejs.org) **doesn't** guarantee that `fn` will be run inside a database transaction.
 
-# Running
-
 # Experiencing
 
 ```sh
