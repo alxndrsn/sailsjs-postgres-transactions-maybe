@@ -7,7 +7,7 @@ module.exports = {
         const ret = await sails
           .getDatastore()
           .sendNativeQuery(require('../../query.sql'))
-          .usingConnection(db)
+          .usingConnection(db);
         return ret;
       });
 

@@ -8,11 +8,19 @@ Example [SailsJS](https://sailsjs.com/) project demonstrating that calling [`dat
 
 ```sh
 yarn
-yarn start
+POSTGRES_URL=postgres://user:password@hostname:post/db-name yarn start
 curl localhost:1337/1
 curl localhost:1337/2
 ```
 
+OR
+
+```sh
+yarn
+POSTGRES_URL=postgres://user:password@hostname:post/db-name yarn test
+```
+
 # Exploring
 
-Modify `query.sql.js` to try different queries run under different "transactional" circumstances, and their differing results.
+* Modify `query.sql.js` to try different queries run under different "transactional" circumstances, and their differing results.
+* Take a look in the `test/` directory.
